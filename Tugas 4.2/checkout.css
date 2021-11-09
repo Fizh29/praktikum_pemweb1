@@ -1,0 +1,210 @@
+body {
+  align-items: flex-start;
+  padding: 0px;
+  margin: auto;
+  border: 1px solid black;
+  max-width: 85%;
+}
+
+nav {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  background-color: #b9b9b9;
+  border-bottom: 1px solid black;
+}
+.icon {
+  width: 15px;
+  margin-right: 2px;
+}
+
+nav h2 {
+  margin-right: 50px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+nav ul li {
+  margin-right: 4px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+.search {
+  margin-left: auto;
+  width: 30px;
+}
+
+.cart {
+  width: 32px;
+}
+
+.content {
+  padding: 40px;
+  display: flex;
+}
+
+.lefttab {
+  width: 260%;
+  border-collapse: collapse;
+}
+.thankyou {
+  display: flex;
+  margin-bottom: 10px;
+}
+.order {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.forty {
+  font-size: 30px;
+}
+.satu {
+  border-top: 1px solid #d8d8d8;
+}
+.satu td p {
+  margin-bottom: 5px;
+}
+.dua {
+  border-bottom: 1px solid #d8d8d8;
+}
+.confirmation td {
+  font-size: 20px;
+}
+.customerinfo {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.paragraph19 {
+  font-size: 19px;
+}
+
+.ending {
+  display: flex;
+  align-items: center;
+}
+.ending img {
+  margin-right: 5px;
+}
+.aside {
+  height: 50%;
+  background-color: grey;
+  padding: 10px;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+}
+.aside h2 {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.toptableright {
+  width: 100%;
+}
+
+.itemssatu {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.itemsdua {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.itemstiga {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.paragraph25 {
+  font-size: 25px;
+}
+
+.rightcontent {
+  margin: 5px;
+  font-size: 20px;
+}
+
+.rightcontent input {
+  width: 200px;
+  font-size: 15px;
+}
+.rightcontent button {
+  justify-content: end;
+  font-size: 15px;
+  width: 100px;
+  background-color: White;
+}
+.rightcontent table {
+  width: 140%;
+  margin-top: 10px;
+}
+.rightcontent table tr {
+  font-size: 20px;
+}
+.foot {
+  margin-top: 8%;
+}
+footer {
+  border-top: 1px solid black;
+  padding: 10px 30px;
+  background-color: rgb(189, 187, 187);
+}
+.footerinfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ending a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.ending ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  width: 100%;
+}
+.ending ul li {
+  margin-right: 4px;
+}
+.ending ul li a {
+  text-decoration: none;
+}
+
+.stay ul {
+  list-style: none;
+}
+
+.stay ul li {
+  margin-right: 4px;
+}
+
+.accounticon {
+  display: flex;
+  justify-content: space-between;
+}
+.subs {
+  justify-content: flex-end;
+}
+.subs input {
+  width: 150px;
+  font-size: 15px;
+}
+
+.subs button {
+  font-size: 15px;
+  width: 100px;
+  background-color: crimson;
+}
