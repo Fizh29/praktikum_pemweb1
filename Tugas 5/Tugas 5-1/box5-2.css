@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+.atas {
+  width: 900px;
+  height: 100px;
+  background-color: green;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.row {
+  margin-top: 20px;
+  width: 900px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collumn {
+  height: 250px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.yellow {
+  width: 250px;
+  background-color: yellow;
+  float: left;
+}
+.orange {
+  width: 600px;
+  background-color: orange;
+  float: right;
+}
+
+.blue {
+  width: 600px;
+  background: blue;
+  float: right;
+}

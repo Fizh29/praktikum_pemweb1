@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.atasatu,
+.atasdua {
+  float: left;
+}
+
+.satu {
+  height: 10vh;
+}
+
+.dua {
+  height: 80vh;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.atassatu,
+.atastiga,
+.ataslima {
+  min-width: 15%;
+}
+
+.atasdua {
+  width: 100%;
+  margin-left: 20px;
+  background-color: orange;
+}
+.atasempat {
+  width: 100%;
+  margin: 0 20px;
+  background-color: grey;
+}
+
+.atassatu {
+  background-color: yellow;
+}
+
+.atastiga {
+  background-color: green;
+}
+
+.ataslima {
+  background-color: blue;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.biru {
+  background-color: blue;
+  height: 10vh;
+}
