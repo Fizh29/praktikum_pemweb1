@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal2</title>
+</head>
+<body>
+    <input type="number" placeholder="Masukkan uang dollar" id="dolar">
+    <br>
+    <button type="button" onclick="kurs()">Convert</button>
+    <br>
+    <input type="text" placeholder="Rupiah" id="hasil">
+    <script>
+        function kurs(){
+            let format = new Intl.NumberFormat("in-IN")
+            let dolar = document.getElementById("dolar").value
+            let hasil = document.getElementById("hasil")
+            let convert = dolar * 14650 
+            hasil.value = "Rp " + format.format(convert)
+        }
+    </script>
+</body>
+</html>

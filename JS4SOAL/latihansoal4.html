@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal 4</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="masukan angka petama" onchange="hitung()">
+    <p>+</p>
+    <input type="number" id="num2" placeholder="masukan angka kedua" onchange="hitung()">
+    <p>=</p>
+    <input type="number" id="hasil" placeholder="hasil">
+    <script>
+        function hitung(){
+            let num1 = parseFloat(document.getElementById("num1").value)
+            let num2 = parseFloat(document.getElementById("num2").value)
+            let hasil = num1 + num2
+            document.getElementById("hasil").value = hasil
+        }
+    </script>
+</body>
+</html>

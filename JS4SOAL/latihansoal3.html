@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal 3</title>
+    <style>
+    table.GeneratedTable {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    color: #000000;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    padding: 3px;
+}
+    </style>
+</head>
+<body>
+    <table class="GeneratedTable">
+        <thead>
+        <tr>
+            <th>Jam Masuk</th>
+            <th>Jam Keluar</th>
+            <th>Lama</th>
+            <th>Keluaran Biaya</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="number" placeholder="Jam Masuk" id="in" onchange="count()"></td>
+            <td><input type="number" placeholder="Jam Keluar" id="out" onchange="count()"></td>
+            <td><input type="text" placeholder="Lama" id="long"></td>
+            <td><input type="text" placeholder="Biaya" id="cost"></td>
+        </tr>
+        </tbody>
+    <table>
+    <script>
+        function count(){
+            let format = new Intl.NumberFormat("in-IN")
+            let is_in = document.getElementById("in").value
+            let out = document.getElementById("out").value
+            let lama = out - is_in
+            document.getElementById("long").value = lama + " Jam"
+            
+            if (lama == 2){
+                let cost = document.getElementById("cost")
+                cost.value = "Rp " + format.format(3000)
+            }else if (lama > 2){
+                let cost = document.getElementById("cost")
+                cost.value = "Rp " + format.format(((lama - 2)*1000) + 3000)
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal1</title>
+</head>
+<body>
+    <input type="number" placeholder="Masukkan Jari-jari" id="jarijari">
+    <br>
+    <button type="button" onclick="keliling()">keliling</button>
+    <button type="button" onclick="luas()">luas</button>
+    <br>
+    <input type="number" placeholder="Hasilnya adalah" id="hasil">
+    <script>
+        let jarijari = document.getElementById("jarijari")
+        let hasil = document.getElementById("hasil")
+
+        function keliling(){
+            let keliling = 3.14 * jarijari.value * 2
+            hasil.value = keliling
+        }
+        function luas(){
+            let luas = 3.14 * jarijari.value * jarijari.value
+            hasil.value = luas
+        }
+    </script>
+</body>
+</html>
