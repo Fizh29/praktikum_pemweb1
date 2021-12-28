@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gaya{display: flex; align-items: center;}
+
+    </style>
+
+</head>
+<body>
+        <h2>Form Validation</h2>
+        <form id="validation">
+            <div class="gaya">
+            <p>Nama Pelanggan 
+                <input type="text" onchange="process()" id="nama" placeholder="Maksimum Nama *max 30 karakter" size="30" required minlength="1" maxlength="30" > 
+            </p>
+            <span style="color: red; font-size: 0.8em;" id="name"></span>
+            </div>
+
+            <div class="gaya">
+            <p>Email
+                <input type="email" id="email" placeholder="example@gmail.com" required onchange="process()"> 
+            </p>
+            <span style="color: red; font-size: 0.8em;"></span>
+            </div>
+
+            <div class="gaya">
+            <p>Jam Keberangkatan 
+                <input type="time" id="jam" size="30" onchange="process()" required> 
+            </p>
+            <span style="color: red; font-size: 0.8em;" id="val-3"></span>
+            </div>
+
+            <div class="gaya">
+            <p>Tujuan Keberangkatan 
+                <input type="text" id="tujuan" placeholder="Tempat Tujuan" size="30" onchange="process()" required minlength="1">
+            </p>
+            <span style="color: red; font-size: 0.8em;" id="val-4"></span>
+            </div>  
+
+            <div class="gaya">
+            <p>Jumlah Tiket 
+                <input type="number" id="tiket" placeholder="1 - 10" size="30" onchange="process()" required min="1" max="10"> 
+            </p>
+            <span style="color: red; font-size: 0.8em;" id="val-5"></span>
+        </div>
+
+            <br>
+            <button onclick="process(event);" >Kirim</button>
+        </form>
+
+        <p id="hasil">
+        </p>
+
+
+        
+        <script src="validation.js"></script>
+</body>

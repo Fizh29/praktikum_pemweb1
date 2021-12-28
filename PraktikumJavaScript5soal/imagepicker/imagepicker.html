@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form_id">
+        <label>Choose image</label>
+        <select id="img" onchange="picker()">
+            <option value="">Select one option below</option>
+            <option value="monyet">monyet</option>
+            <option value="sapi">sapi</option>
+            <option value="onta">onta</option>
+            <option value="penguin">penguin</option>
+        </select>
+        <img src="" alt="" >
+    </form>
+    <div id="gambar"></div>
+    <script>
+        let image = document.getElementById("img")
+        function picker(){
+            if (image.value == "monyet"){
+                document.getElementById("gambar").innerHTML = '<img src="monyet.jpg" alt="">'
+                window.alert("ini gambar monyet")
+            }else if (image.value == "sapi"){
+                document.getElementById("gambar").innerHTML = '<img src="sapi.jpg" alt="" style="width: 300px;">'
+                window.alert("ini gambar sapi")
+            }
+            else if (image.value == "onta"){
+                document.getElementById("gambar").innerHTML = '<img src="onta.jpg" alt="">'
+                window.alert("ini gambar onta")
+            }
+            else if (image.value == "penguin"){
+                document.getElementById("gambar").innerHTML = '<img src="pengu.jpg" alt="">'
+                window.alert("ini gambar penguin")
+            }else {
+                window.alert("Pick any image")
+            }
+        }
+    </script>
+</body>
+</html>

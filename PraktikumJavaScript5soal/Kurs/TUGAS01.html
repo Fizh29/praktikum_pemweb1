@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 01</title>
+</head>
+<body>
+    <fieldset style="background-color: aliceblue; width: fit-content;">
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table style="border: 1px solid black; border-collapse: collapse;">
+            <tr>
+                <th>Masukkan Nilai</th>
+                <th>Valas</th>
+                <th>Nilai Rupiah</th>
+            </tr>
+            <tr>
+                <td><input type="number" id="nilai" onchange="kurs()"></td>
+                <td>
+                    <select id="valas" onchange="kurs()">
+                        <option value="us">Dollar US</option>
+                        <option value="sng">Dollar Singapore</option>
+                        <option value="mly">Ringgit Malaysia</option>
+                        <option value="jpg">Yen Jepang</option>
+                        <option value="eu">Euro</option>
+                        <option value="arb">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td><input type="number" id="hasil"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <script>
+        function kurs() {
+            let n = Number(document.getElementById("nilai").value)
+            
+            let v = document.getElementById("valas")
+                if (v.value == "us") {
+                    let j = 9915 * n
+                    document.getElementById("hasil").value = j
+                } else if (v.value == "sng") {
+                    let j = 13472 * n
+                    document.getElementById("hasil").value = j
+                } else if (v.value == "mly") {
+                    let j = 874 * n
+                    document.getElementById("hasil").value = j
+                } else if (v.value == "jpg") {
+                    let j = 120 * n
+                    document.getElementById("hasil").value = j
+                } else if (v.value == "eu") {
+                    let j = 15888 * n
+                    document.getElementById("hasil").value = j
+                } else if (v.value == "arb") {
+                    let j = 3592 * n
+                    document.getElementById("hasil").value = j
+                }
+        }
+    </script>
+</body>
+</html>
